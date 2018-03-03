@@ -1,5 +1,5 @@
 window.onload = function(){
-/*console.log('Loaded!');
+console.log('Loaded!');
 var x=0;
 var img = document.getElementById('img');
 var text = document.getElementById('text');
@@ -30,7 +30,6 @@ img.onclick=function(){
    s=s+1;
    text.innerHTML="Score: "+s;
 };
-*/
 var butt = document.getElementById('countt');
 butt.onclick=function(){
     var request= new XMLHttpRequest();
