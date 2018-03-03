@@ -1,10 +1,9 @@
-window.onLoad()=function(){
 console.log('Loaded!');
 var x=0;
 var img = document.getElementById('img');
 var text = document.getElementById('text');
-var butt = document.getElementById('butt');
-var coun = document.getElementById('coun');
+
+
 var marginleft=0;
 var y=0;
 function moveright()
@@ -31,7 +30,7 @@ img.onclick=function(){
    text.innerHTML="Score: "+s;
 };
 
-
+var butt = document.getElementById('butt');
 butt.onclick=function(){
     var request= new XMLHttpRequest();
     
@@ -39,6 +38,7 @@ butt.onclick=function(){
         if(request.readyState === XMLHttpRequest.DONE){
             if(request.status===200){
                 var counter=request.responseText;
+                var coun = document.getElementById('coun');
                 coun.innerHTML=counter;
             }
         }
@@ -47,4 +47,3 @@ butt.onclick=function(){
     request.open('GET','http://saisuhasvemuri.imad.hasura-app.io/counter',true);
     request.send(null);
 };
-}
