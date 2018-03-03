@@ -31,7 +31,7 @@ img.onclick=function(){
 };
 
 
-butt.onClick=function(){
+butt.onclick=function(){
     var request= new XMLHttpRequest();
     
     request.onreadystatechange = function(){
