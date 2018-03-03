@@ -1,6 +1,7 @@
 console.log('Loaded!');
 var x=0;
 var element = document.getElementById('img');
+var element = document.getElementById('text');
 var marginleft=0;
 var y=0;
 function moveright()
@@ -20,6 +21,9 @@ function moveright()
         img.style.marginLeft=marginleft+'px';
     }
 }
+var s=0;
 img.onclick=function(){
    setInterval(moveright,10);
+   s=s+1;
+   text.innerHTML="Score: "+s;
 }
