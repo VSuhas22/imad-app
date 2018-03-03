@@ -16,7 +16,7 @@ function moveright()
     }
     else
     {
-        marginleft=marginleft+10;
+        marginleft=marginleft-10;
         img.style.marginLeft=marginleft+'px';
     }
 }
