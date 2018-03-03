@@ -1,3 +1,4 @@
+
 /*console.log('Loaded!');
 var x=0;
 var img = document.getElementById('img');
@@ -42,7 +43,7 @@ butt.onclick=function(){
                 coun.innerHTML=counter;
             }
         }
-    }
+    };
     
     request.open('GET','http://saisuhasvemuri.imad.hasura-app.io/counter',true);
     request.send(null);
