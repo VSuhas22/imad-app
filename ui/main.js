@@ -10,5 +10,6 @@ img.onclick=function(){
     else if(x==1)
     {
         img.style.marginLeft='0px';
+        x=0;
     }
 }
