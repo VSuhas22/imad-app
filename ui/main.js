@@ -30,7 +30,7 @@ img.onclick=function(){
    text.innerHTML="Score: "+s;
 };
 */
-var butt = document.getElementById('butt');
+var butt = document.getElementById('countt');
 butt.onclick=function(){
     var request= new XMLHttpRequest();
     
